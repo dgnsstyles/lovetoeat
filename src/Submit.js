@@ -22,14 +22,14 @@ class Submit extends Component {
                        <div className="col-xs-12 col-sm-12">
                            <h1>Submit</h1>
                            <div className="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label htmlFor="exampleInputEmail1">Email address</label>
                             <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Email" />
                         </div>
                         <div className="form-group">
-                            <label for="Description">Description</label>
+                            <label htmlFor="Description">Description</label>
                             <textarea type="Text" className="form-control" placeholder="Description" />
                         </div>
-                        <button type="submit" className="btn btn-default">Submit</button>
+                        <button type="submit" className="btn btn-lg btn-info">Submit</button>
                        </div>
                      </div>
                  </form>        
