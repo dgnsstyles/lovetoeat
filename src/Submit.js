@@ -17,8 +17,14 @@ class Submit extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Submit</h2>
-				<button onClick={this.submitRecipe}>Submit a Recipe</button>
+				 <div className="row">
+                    <div className="col-xs-12 col-sm-12">
+                        <h2>Submit</h2>
+                        <label htmlFor="Name">Name:</label>
+                        <input type="text"/>
+                    </div>
+                </div>
+				
 			</div>
 		);
 	}
