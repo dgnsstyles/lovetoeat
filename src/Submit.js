@@ -17,13 +17,22 @@ class Submit extends Component {
 	render() {
 		return (
 			<div>
-				 <div className="row">
-                    <div className="col-xs-12 col-sm-12">
-                        <h2>Submit</h2>
-                        <label htmlFor="Name">Name:</label>
-                        <input type="text"/>
-                    </div>
-                </div>
+				 <form>
+                     <div className="row">
+                       <div className="col-xs-12 col-sm-12">
+                           <h1>Submit</h1>
+                           <div className="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Email" />
+                        </div>
+                        <div className="form-group">
+                            <label for="Description">Description</label>
+                            <textarea type="Text" className="form-control" placeholder="Description" />
+                        </div>
+                        <button type="submit" className="btn btn-default">Submit</button>
+                       </div>
+                     </div>
+                 </form>        
 				
 			</div>
 		);
