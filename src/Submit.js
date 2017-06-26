@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Ingredients from './Ingredients';
 
 class Submit extends Component {
 
@@ -29,7 +30,10 @@ class Submit extends Component {
                             <label htmlFor="Description">Description</label>
                             <textarea type="Text" className="form-control" placeholder="Description" />
                         </div>
-                        <button type="submit" className="btn btn-lg btn-info">Submit</button>
+                        
+					    <Ingredients addIngredient={(quantity, ingredient) => {this.addIngredient(quantity, ingredient)}}/>
+					  <button type="button" onClick={this.submitRecipe} className="btn btn-danger btn-lg">Submit</button>
+            
                        </div>
                      </div>
                  </form>        
