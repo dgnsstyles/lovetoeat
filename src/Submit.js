@@ -25,10 +25,10 @@ class Submit extends Component {
                            <div className="form-group">
                             <label htmlFor="name">Name</label>
 					    <input type="text" 
-					    				ref={(input) => {this.name = input;}}
-					    				className="form-control" 
-					    				id="name" 
-					    				placeholder="Enter the name of the recipie" />
+					          ref={(input) => {this.name = input;}}
+					    	  className="form-control" 
+					    	  classID="name" 
+					    	  placeholder="Enter the name of the recipie" />
                         </div>
                         <div className="form-group">
                             <label htmlFor="Description">Description</label>
