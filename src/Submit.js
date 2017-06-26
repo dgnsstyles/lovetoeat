@@ -23,12 +23,19 @@ class Submit extends Component {
                        <div className="col-xs-12 col-sm-12">
                            <h1>Submit</h1>
                            <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" placeholder="Email" />
+                            <label htmlFor="name">Name</label>
+					    <input type="text" 
+					    				ref={(input) => {this.name = input;}}
+					    				className="form-control" 
+					    				id="name" 
+					    				placeholder="Enter the name of the recipie" />
                         </div>
                         <div className="form-group">
                             <label htmlFor="Description">Description</label>
-                            <textarea type="Text" className="form-control" placeholder="Description" />
+                            <textarea className="form-control" 
+					         id="description" 
+					         ref={(input) => {this.description = input;}}
+					         placeholder="Enter a brief description" />
                         </div>
                         
 					    <Ingredients addIngredient={(quantity, ingredient) => {this.addIngredient(quantity, ingredient)}}/>
